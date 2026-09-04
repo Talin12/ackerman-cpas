@@ -1,20 +1,26 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Ackerman CPAs
 
-# Run and deploy your AI Studio app
+Marketing site for Ackerman CPAs — a certified public accounting and advisory
+firm in Louisville, Kentucky.
 
-This contains everything you need to run your app locally.
+Built with React 19, TypeScript, Vite and Tailwind CSS v4.
 
-View your app in AI Studio: https://ai.studio/apps/2c12d2f1-fd7d-46fd-b5d3-b8a590da8b47
+## Run locally
 
-## Run Locally
+**Prerequisites:** Node.js 18+
 
-**Prerequisites:**  Node.js
+```bash
+npm install
+npm run dev
+```
 
+The dev server runs on http://localhost:3000.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Scripts
+
+| Command           | Description                        |
+| ----------------- | ---------------------------------- |
+| `npm run dev`     | Start the dev server               |
+| `npm run build`   | Production build to `dist/`        |
+| `npm run preview` | Preview the production build       |
+| `npm run lint`    | Type-check with `tsc --noEmit`     |
