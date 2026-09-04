@@ -4,7 +4,7 @@ import { HeroSection } from './components/HeroSection';
 import { AboutUsSection } from './components/AboutUsSection';
 import { AboutUsModal } from './components/AboutUsModal';
 import { ConsultationModal } from './components/ConsultationModal';
-import { Phone, MessageSquare } from 'lucide-react';
+import { CalendarCheck } from 'lucide-react';
 
 const BACKGROUND_IMAGE_URL =
   'https://res.cloudinary.com/duk9coqow/image/upload/v1788527071/Generating_new_firm_frame_2K_202609041833_impbwe.jpg';
@@ -83,16 +83,17 @@ export default function App() {
         </div>
       </footer>
 
-      {/* Floating Action Button inspired by WhatsApp widget in screenshots */}
-      <div className="fixed bottom-6 right-6 z-40">
+      {/* Floating consultation action — styled off the primary CTA so it reads as
+          part of the firm's identity rather than a third-party chat widget */}
+      <div className="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-40">
         <button
           onClick={() => setConsultationOpen(true)}
-          className="group relative flex h-13 w-13 items-center justify-center rounded-full bg-emerald-600 text-white shadow-xl transition-all duration-300 hover:scale-105 hover:bg-emerald-700 active:scale-95"
-          aria-label="Direct Consultation & Support"
+          className="group relative flex h-14 w-14 items-center justify-center rounded-full bg-stone-950 text-white ring-1 ring-amber-600/30 shadow-[0_8px_28px_-6px_rgba(28,25,23,0.45)] transition-all duration-300 hover:bg-stone-800 hover:ring-amber-500/60 active:scale-95"
+          aria-label="Schedule a consultation"
         >
-          <MessageSquare className="h-6 w-6" />
-          {/* Tooltip on hover */}
-          <span className="absolute right-15 whitespace-nowrap rounded-lg bg-stone-900 px-3 py-1.5 text-xs font-sans font-medium text-white opacity-0 shadow-lg transition-opacity duration-200 group-hover:opacity-100 pointer-events-none">
+          <CalendarCheck className="h-[22px] w-[22px] text-amber-400 transition-transform duration-300 group-hover:scale-110" />
+          {/* Tooltip — pointer devices only; it can't be dismissed on touch */}
+          <span className="pointer-events-none absolute right-16 hidden whitespace-nowrap rounded bg-stone-950 px-3 py-1.5 text-xs font-sans font-medium text-white opacity-0 shadow-lg transition-opacity duration-200 group-hover:opacity-100 lg:block">
             Schedule a Consultation
           </span>
         </button>
