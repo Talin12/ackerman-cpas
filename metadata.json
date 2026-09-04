@@ -1,0 +1,6 @@
+{
+  "name": "Ackerman CPAs",
+  "description": "Premium CPA & accounting advisory firm in Louisville, Kentucky. Providing strategic tax planning, corporate advisory, and executive accounting services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
