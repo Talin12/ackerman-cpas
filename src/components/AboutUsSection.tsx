@@ -46,13 +46,13 @@ export const AboutUsSection: React.FC<AboutUsSectionProps> = ({ onOpenConsultati
             <div className="mt-4 mb-10 h-1 w-16 bg-amber-600 rounded-full" />
 
             {/* 3 Bespoke Metric Counters */}
-            <div className="grid grid-cols-3 gap-4 pt-2 border-t border-stone-100">
+            <div className="grid grid-cols-3 gap-3 sm:gap-4 pt-2 border-t border-stone-100">
               {/* Stat 1 */}
               <div className="flex flex-col">
                 <div className="mb-2 flex h-8 w-8 items-center justify-center rounded-full bg-amber-50 text-amber-800 border border-amber-200/60">
                   <Award className="h-4 w-4" />
                 </div>
-                <span className="font-sans text-2xl sm:text-3xl font-extrabold text-stone-950 tracking-tight">
+                <span className="font-sans text-xl sm:text-3xl font-extrabold text-stone-950 tracking-tight">
                   25+ Yrs
                 </span>
                 <span className="text-[11px] font-sans text-stone-500 font-medium mt-1 leading-snug">
@@ -65,7 +65,7 @@ export const AboutUsSection: React.FC<AboutUsSectionProps> = ({ onOpenConsultati
                 <div className="mb-2 flex h-8 w-8 items-center justify-center rounded-full bg-amber-50 text-amber-800 border border-amber-200/60">
                   <Compass className="h-4 w-4" />
                 </div>
-                <span className="font-sans text-2xl sm:text-3xl font-extrabold text-stone-950 tracking-tight">
+                <span className="font-sans text-xl sm:text-3xl font-extrabold text-stone-950 tracking-tight">
                   100%
                 </span>
                 <span className="text-[11px] font-sans text-stone-500 font-medium mt-1 leading-snug">
@@ -78,7 +78,7 @@ export const AboutUsSection: React.FC<AboutUsSectionProps> = ({ onOpenConsultati
                 <div className="mb-2 flex h-8 w-8 items-center justify-center rounded-full bg-amber-50 text-amber-800 border border-amber-200/60">
                   <Users className="h-4 w-4" />
                 </div>
-                <span className="font-sans text-2xl sm:text-3xl font-extrabold text-stone-950 tracking-tight">
+                <span className="font-sans text-xl sm:text-3xl font-extrabold text-stone-950 tracking-tight">
                   $500M+
                 </span>
                 <span className="text-[11px] font-sans text-stone-500 font-medium mt-1 leading-snug">

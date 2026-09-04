@@ -54,7 +54,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({ isOpen, on
           </button>
         </div>
 
-        <div className="p-6 sm:p-8 max-h-[85vh] overflow-y-auto">
+        <div className="p-6 sm:p-8 max-h-[68svh] sm:max-h-[80vh] overflow-y-auto">
           {submitted ? (
             <div className="py-8 text-center">
               <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-amber-50 text-amber-700 border border-amber-200">

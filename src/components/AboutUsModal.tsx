@@ -36,7 +36,7 @@ export const AboutUsModal: React.FC<AboutUsModalProps> = ({
         </div>
 
         {/* Modal Body */}
-        <div className="p-6 sm:p-10 max-h-[80vh] overflow-y-auto space-y-6">
+        <div className="p-6 sm:p-10 max-h-[65svh] sm:max-h-[75vh] overflow-y-auto space-y-6">
           
           <div>
             <span className="text-xs font-sans tracking-widest text-amber-800 uppercase font-medium">

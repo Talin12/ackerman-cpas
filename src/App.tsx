@@ -14,6 +14,9 @@ import { Phone, MessageSquare } from 'lucide-react';
 const BACKGROUND_IMAGE_URL =
   'https://res.cloudinary.com/duk9coqow/image/upload/v1788527071/Generating_new_firm_frame_2K_202609041833_impbwe.jpg';
 
+const MOBILE_BACKGROUND_IMAGE_URL =
+  'https://res.cloudinary.com/duk9coqow/image/upload/v1788529409/Create_9_16_website_background_r__202609041913_so6hmj.jpg';
+
 export default function App() {
   const [aboutUsOpen, setAboutUsOpen] = useState(false);
   const [consultationOpen, setConsultationOpen] = useState(false);
@@ -39,6 +42,7 @@ export default function App() {
         {/* Hero Section with Left-Aligned Editorial Punch & Directional Background Gradient */}
         <HeroSection
           bgImageUrl={BACKGROUND_IMAGE_URL}
+          mobileBgImageUrl={MOBILE_BACKGROUND_IMAGE_URL}
           onOpenConsultation={() => setConsultationOpen(true)}
           onScrollToAbout={scrollToAbout}
         />
@@ -78,7 +82,7 @@ export default function App() {
           </div>
         </div>
 
-        <div className="mx-auto max-w-7xl mt-4 pt-4 border-t border-stone-200/50 flex items-center justify-between text-[11px] text-stone-400">
+        <div className="mx-auto max-w-7xl mt-4 pt-4 border-t border-stone-200/50 flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left text-[11px] text-stone-400">
           <p>&copy; {new Date().getFullYear()} Ackerman CPAs. All rights reserved.</p>
           <p>Licensed by Kentucky State Board of Accountancy &bull; AICPA Member</p>
         </div>
